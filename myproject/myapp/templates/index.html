@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт на Django</title>
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">MyBrand</div>
+        <nav>
+            <a href="#about">О нас</a>
+            <a href="#services">Услуги</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <p>Этот сайт работает на Python и Django. И он выглядит отлично!</p>
+        <a href="#contact" class="btn">Связаться со мной</a>
+    </section>
+
+    <!-- Блок с карточками -->
+    <section id="services" class="features">
+        <div class="card">
+            <h3>Быстро</h3>
+            <p>Сайт загружается моментально благодаря Django.</p>
+        </div>
+        <div class="card">
+            <h3>Удобно</h3>
+            <p>Адаптирован под телефоны и компьютеры.</p>
+        </div>
+        <div class="card">
+            <h3>Стильно</h3>
+            <p>Современный дизайн с плавными анимациями.</p>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer id="contact">
+        <p>© 2026 Мой первый проект на Django. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
